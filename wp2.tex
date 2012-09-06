@@ -1,0 +1,254 @@
+\workpkg{2}
+
+%% This Work Package deals with the detailed design of the spacecraft
+%% subsystems, the revision of the mass and power budgets, and the
+%% definition of the final spacecraft architecture.  WP 2.1
+
+%% Timeline : Weeks 3, 4 and 5 (3-weeks total duration)
+
+%% Deadline for Report Delivery: Monday October 8th, 12.00 hours
+
+%% Each report shall include, as a minimum, all the Deliverables
+%% listed in the sub-WP descriptions provided below (each deliverable
+%% is identified by a unique code, in the form Dx.y.z). The names and
+%% student numbers of the authors shall be present on the cover
+%% page. The report shall also include a work division table,
+%% indicating which group members have contributed to each one of the
+%% tasks.  Deliver the printed report to the Teaching Assistant
+%% assigned to your group.
+
+\subworkpkg{2.1}
+
+
+%% Tasks
+
+%% Note that all the Tasks below, related to different subsystems of
+%% the spacecraft, need to be carried out in parallel, because several
+%% key requirements and characteristics of the different subsystems
+%% are significantly coupled each other. Hint: divide the whole group
+%% into sub-groups (or individuals), each one working on a different
+%% subsystem, and plan regular “system engineering meetings”
+%% (e.g. daily) to exchange with the other sub-groups the information
+%% related to the work done on each subsystem.
+
+%% A. Attitude Determination and Control System (ADCS)
+
+%% 1. Define the key subsystem requirements and functions (e.g.,
+%% spacecraft stabilization and station keeping, precise orientation
+%% of the payload instruments, orientation of the solar arrays, etc.).
+
+%% 2. Evaluate whether different modes of operation of the ADCS are
+%% needed or not.
+
+%% 3. Evaluate the external and internal disturbances (forces and
+%% torques) acting on the spacecraft.
+
+%% 4. Define the type, number and size of attitude sensors and
+%% attitude control actuators needed by the spacecraft (note: consider
+%% sufficient redundancies!!)
+
+%% 5. Select the sensors and actuators for the spacecraft among
+%% commercially existing models, and dimension your subsystem based on
+%% the characteristics of the selected components.
+
+%% 6. Develop a block diagram that identifies the various functions
+%% that need to be performed by the ADCS software.
+
+%% B. Propulsion
+
+%% 1. Define the key subsystem requirements and functions (e.g., orbit
+%% insertion, orbital manoeuvres, interplanetary transfer,
+%% etc.). Note: consider only the propulsion system on-board of the
+%% orbiter spacecraft; design of optional kick stages (if any) is not
+%% required.
+
+%% 2. Define and quantify the eventual forces to be overcome by the
+%% propulsion system (gravity, drag, solar radiation etc.).
+
+%% 3. Revise your estimation for the total v required by the mission
+%% and, based on it, select the thruster(s) and the propellants to be
+%% used (note: decide at this stage if a “low thrust” or a “high
+%% thrust” strategy has to be adopted, and select your thrusters
+%% accordingly).
+
+%% 4. Evaluate the total propellant mass needed by the mission. Don’t
+%% forget to consider sufficient margins!!
+
+%% 5. List and characterize all the components of the propulsion
+%% systems; don’t consider the propellant tank(s), that will be
+%% studied under the structures subsystem. If possible, select a
+%% commercially available complete propulsion system.
+
+%% 6. Generate a sketch showing the number and the location of the
+%% various propulsion components in the spacecraft. Include in the
+%% sketch also the major characteristics of the components shown.
+
+%% C. Thermal Control
+
+%% 1. Define the key subsystem requirements and functions (e.g.,
+%% operational temperatures of the spacecraft components, acceptable
+%% thermal gradients, etc.).
+
+%% 2. Define the thermal environment of the spacecraft (solar
+%% intensity, planet flux, albedo, etc.). Focus should be on defining
+%% the thermal environments that are most critical for the design,
+%% i.e. those environments that lead to max/min temperature
+%% conditions.
+
+%% 3. Estimate the internal heat generated in the spacecraft.
+
+%% 4. Generate a straw-man subsystem design using only passive means
+%% of thermal control like paints, MLI (Multi-Layer Insulation) and
+%% OSR (Optical Solar Reflector).
+
+%% 5. Using the equations provided in Ref. [1], make a first
+%% estimation of the maximum and minimum equilibrium temperature of
+%% both the spacecraft body and the solar array (when present), in the
+%% case when no thermal control systems are used.
+
+%% 6. Based on your equilibrium temperature estimation and on the
+%% temperature requirements for the different components, define a
+%% thermal control strategy for the spacecraft and select (or design)
+%% the appropriate subsystem components needed for it.  Where
+%% possible, use commercially existing components or materials.
+
+%% D. Structures and Mechanisms
+
+%% 1. Define the key requirements for the structures and mechanisms
+%% subsystem.
+
+%% 2. Define all the loads acting on the spacecraft during its
+%% operations (note: take into
+
+%% account the launch loads that you have already estimated during WP
+%% 1!!). Define the safety factors to be used (you can use, for
+%% instance, the values provided by the relevant ESA ECSS standards,
+%% see Ref. [8]).
+
+%% 3. Preliminarily dimension and design the primary structure of your
+%% spacecraft, also choosing adequate materials for it. Based on the
+%% relevant requirements for the spacecraft and its components, decide
+%% if the structure has to be designed for stiffness and/or strength
+%% and/or internal pressure. Hint: for your analysis you may consider
+%% the primary structure to resemble a hollow cylindrical beam.
+
+%% 4. Based on the amount of propellant(s) needed and the required
+%% storage pressure, dimension and design the propellant tank(s), also
+%% choosing adequate materials (note: the tank(s) can eventually be
+%% used as primary structural elements!). Whereas possible, select
+%% commercially existing tanks.
+
+%% 5. Preliminarily dimension and design the supporting structure of
+%% the solar arrays of your spacecraft (i.e., the mechanical structure
+%% on which the array is mounted), also choosing adequate materials
+%% for it. Based on the relevant requirements for the spacecraft and
+%% its components, decide if the structure has to be designed for
+%% stiffness and/or strength and/or internal pressure.
+
+%% 6. Define the other mechanisms eventually needed by the spacecraft
+%% (e.g. for deployment, pointing, separation, gimbal, etc.) and
+%% select them among commercially existing components.
+
+%% E. Power
+
+%% 1. Define the key power subsystem requirements and, in particular,
+%% the total amount of power required by the spacecraft during all the
+%% mission phases.
+
+%% 2. Quantify the available solar energy, i.e. the solar intensity
+%% and the direction of solar radiation, the duration of day time and
+%% night time (eclipse) periods, the energy received from the planet.
+
+%% 3. Make a preliminary dimensioning of the solar arrays and, in
+%% particular, a first estimation of their size (note: detailed design
+%% of the solar arrays will be done during WP 3!!). You should
+%% consider, for instance, whether you would like a fixed array or an
+%% array that can be rotated over one or two axes to allow for ideal
+%% lighting conditions.
+
+%% 4. Based on your power requirements, evaluate the main
+%% characteristic properties of the spacecraft batteries (e.g.,
+%% specific energy, energy density, capacity, mass, size, etc.).
+
+%% 5. Select the batteries and the power control components among
+%% commercially existing models.
+
+%% 6. Generate a block diagram showing the main subsystem components,
+%% the power flow and the efficiencies of power conversion.
+
+%% F. Payload
+
+%% 1. Based on the general payload requirements and instruments list
+%% provided in the project description of Section 3, choose the
+%% payload components to be used by your spacecraft among commercially
+%% available or previously used/proposed ones. Hint: for accomplishing
+%% this task, you can also make use of the information included in
+%% Ref. [7].
+
+%% 2. Define the positioning and interface constraints for all the
+%% payload components.
+
+%% G. Other Subsystems
+
+%% 1. For the remaining subsystems (command and data handling,
+%% communications, navigation, etc.) define their key requirements and
+%% functions and preliminarily select their main components. Don’t go
+%% too much into the details for these subsystems; just analyse their
+%% general architecture and their impact on the design of the other
+%% spacecraft subsystems.
+
+%% Deliverables
+
+%% D2.1.1. For each one of the Tasks and sub-Tasks described above,
+%% document in detail your choices, calculations and outcomes. Provide
+%% detailed characteristics of the components you have chosen,
+%% including their mass, size and power requirements; whereas
+%% possible, include pictures and/or drawings of the components.
+
+\deliverable{2.1.1}
+
+\subworkpkg{2.2}
+
+%% Tasks
+
+%% A. Using the result obtained by WP 2.1 (in particular, the
+%% requirements and characteristics of the components chosen for the
+%% subsystems), define detailed mass and power budgets for the
+%% spacecraft.  Clearly indicate the margins that are available.
+
+%% B. Compare the new budgets to the preliminary ones defined in the
+%% framework of WP 1, and highlight eventual changes or significant
+%% differences.
+
+%% C. Verify that the mass and power budgets are compliant to ALL the
+%% mission requirements and, if necessary, re-iterate the subsystems
+%% design obtained during WP 2.1.
+
+%% Deliverables
+
+%% D2.2.1. Tables showing the detailed mass and power budgets for the
+%% spacecraft.
+
+\deliverable{2.2.1}
+
+\subworkpkg{2.3}
+
+%% Tasks
+
+%% A. Based on the operational requirements, the interfaces and the
+%% dimensions of the subsystems and their components, define a
+%% detailed architecture of the spacecraft including all the relevant
+%% subsystems.
+
+%% B. Draft your detailed spacecraft architecture as a CATIA drawing,
+%% and compare it to the preliminary one(s) obtained in the framework
+%% of WP 1.
+
+%% Deliverables
+
+%% D2.3.1. CATIA drawing of the spacecraft architecture. The drawing
+%% shall include one or more 3D views and the necessary 2D
+%% views/cut-offs needed to show the position and interfaces of all
+%% subsystems.
+
+\deliverable{2.3.1}
