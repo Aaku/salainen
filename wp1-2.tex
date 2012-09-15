@@ -36,25 +36,27 @@
 
 \deliverable{1.2.1}
 
-Data is from \cite{nasaeuropa} and other sources which should be added.
+Table including all the relevant data on the celestial body object of
+the mission.  Data is from
+\cite{nasaeuropa,Jupiter,Europa,Europa2,Europa3}.
 
 \begin{itemize}
-\item{Orbit Size Around Jupiter (semi-major axis):}  671,100 km
-\item{Periapsis (closest):}  664,792 km
-\item{Apoapsis (farthest):}  677,408 km
+\item{Orbit Size Around Jupiter (semi-major axis):} 671,100 km
+\item{Periapsis (closest):} 664,792 km
+\item{Apoapsis (farthest):} 677,408 km
 \item{Sidereal Orbit Period (Length of Year):} 3.551181041 Earth days
-\item{Orbit Circumference:}  4,216,552.51 km
-\item{Average Orbit Velocity:}  49,476.1 km/h
+\item{Orbit Circumference:} 4,216,552.51 km
+\item{Average Orbit Velocity:} 49,476.1 km/h
 \item{Orbit Eccentricity:} 0.0094
 \item{Orbit Inclination:} 0.466 degree
-\item{Mean Radius:}  1,560.8 km
-\item{Equatorial Circumference:}  9806.8 km
-\item{Volume:}  15,926,867,918 \si{km^3}
-\item{Mass:}  47,998,438,387,492,700,000,000 kg
-\item{Planet density:}  3.013 \si{g/cm^3}
-\item{Surface Area:}  30,612,893.23 \si{km^2}
-\item{Surface Gravity:}  1.315 \si{m/s^2}
-\item{Escape Velocity:}  7,293 km/h. Scientific Notation: 2026 m/s
+\item{Mean Radius:} 1,560.8 km
+\item{Equatorial Circumference:} 9806.8 km
+\item{Volume:} 15,926,867,918 \si{km^3}
+\item{Mass:} 47,998,438,387,492,700,000,000 kg
+\item{Planet density:} 3.013 \si{g/cm^3}
+\item{Surface Area:} 30,612,893.23 \si{km^2}
+\item{Surface Gravity:} 1.315 \si{m/s^2}
+\item{Escape Velocity:} 7,293 km/h. Scientific Notation: 2026 m/s
 \item{Sidereal Rotation Period (Length of Day):} 3.551 Earth days
 \item{Atmospheric Constituents:} Oxygen
 \item{Temperature:} 102K
@@ -68,7 +70,177 @@ Data is from \cite{nasaeuropa} and other sources which should be added.
 
 \deliverable{1.2.2}
 
+Comparative table including all relevant data of reference
+spacecrafts.
+
+
+\centering \tabletail{\hline}
+\begin{supertabular}{|p{.15\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|}
+  \hline & Galileo & Juno & JEO & JUICE & Cassini \\ \hline Launch
+  Vehicle & Space Shuttle Atlantis (STS-34R) & Atlas V551 (Atlas first
+  stage with five solid rocket boosters, Centaur upper stage) & & &
+  Titan IV-B/Centaur launch vehicle \\ \hline Spacecraft mass &
+  Orbiter: 2,223 kg Probe: 339 kg & 3,625 kilograms total at launch,
+  consisting of 1,593 kilograms of spacecraft, 1,280 kilograms of fuel
+  and 752 kilograms of oxidizer & Launch Mass Capability, 5040 kg
+  Launch Vehicle Adapter, 123 kg Flight System Mass, 1367 kg
+  Propellant (for 2260 m/s), 2646 kg Remaining usable launch mass, 973
+  kg (for contingency and system margin) & Dry mass at launch: ~1800
+  kg Chemical propellant: 3000kg Payload mass: 104kg & Spacecraft Ñ
+  2,442 kg Propellant Ñ 3,132 kg Total Mass Ñ 5,574 kg
+
+  Orbiter Weight: 5,712 kilograms with fuel, Huygens probe, adapter,
+  etc 2,125 kilograms unfueled orbiter alone \\ \hline Spacecraft
+  dimension & Orbiter: 6.15 meters Probe: 86 cm & 3.5 meters high, 3.5
+  meters in diameter & & & Orbiter dimension: 6.7 meters high; 4
+  meters wide \\ \hline Power & Two Radioisotope Thermoelectric
+  Generators
+
+  Max power: 570W & Solar Arrays: length of each solar array 9 meters
+  by 2.65 meters Total surface area of solar arrays: more than
+  60-meters squared & 540W RPS (MMRTG or ASRG) Lithium Ion battery for
+  peak power management & Power: solar panels:636-693W(EOM) Solar
+  array 60 Ð 75 m2 & 885 watts (633 watts at end of mission) from
+  radioisotope thermoelectric generators \\ \hline Propulsion & The
+  spacecraft's propulsion module consists of twelve 10-newton
+  (2.25-pound-force) thrusters and a single 400-newton
+  (90-pound-force) engine which use monomethylhydrazine fuel and
+  nitrogen-tetroxide oxidizer & Dual mode propulsion subsystem; a
+  bi-propellant main engine and mono-propellant reaction control
+  system thrusters. The 12 reaction control system thrusters allow
+  translation and rotation about three axes & Bi-propellant , 900N
+  gimbaled engine & High delta-V capability (2700 m/s) & Two engines,
+  445 Newton thrust each \\ \hline Antenna diameter & 4.8-meter & 4
+  meter & & 3m & 4m \\ \hline Total cost & \$1.3 billion & \$1.1
+  billion & & & \$3.27 billion \\ \hline Additional characteristics &
+  & & 3m HGA with 2-axis gimbal, 25 W X-band and Ka-band TWTAs & X-
+  and Ka bands, Downlink ³ 1.4 Gbit/day & \\ \hline
+\end{supertabular}
+
+Sources used
+\cite{Galileo,Galileo2,Juno,JEO,Juice,Juice2,Cassini,Cassini2}.
+
 %% D1.2.3. Detailed list of design requirements, with a clear
 %% indication of the driving requirements.
 
 \deliverable{1.2.3}
+
+Design Requirements
+\begin{itemize}
+
+\item{Propulsion}
+  \begin{itemize}
+  \item{The spacecraft should be able to generate enough thrust in
+    order to get in the flight path to Jupiter after being separated
+    from the launcher}
+  \item{The propulsion should be provided in such a way that direction
+    of the flight path can be controlled}
+  \item{The spacecraft should be able to provide propulsion which can
+    create the desired delta-V in order to achieve interplanetary
+    transfer (Earth -- Jupiter \& Jupiter -- Europa)}
+  \item{The propulsion should be provided in case of undesired
+    de-orbiting}
+  \end{itemize}
+
+\item{Power}
+  \begin{itemize}
+  \item{At least 50 watts of power should be provided for the payload
+    (spacecraft instruments), which will be gained from the solar
+    arrays (during exposure to sunlight) and batteries (during
+    eclipse)}
+  \end{itemize}
+
+\item{Structural Performance}
+  \begin{itemize}
+  \item{The spacecraft structure should be able to endure the loads
+    that are expected to occur during the launch}
+  \item{The spacecraft structure should be able to endure the pressure
+    difference that is expected to occur during the missions}
+  \item{Natural frequency of the spacecraft should be avoided during
+    the missions}
+  \end{itemize}
+
+\item{Endurance and structural integrity}
+  \begin{itemize}
+  \item{The spacecraft should resist fatigue and environmental
+    deterioration at least over 3 years}
+  \item{Reliability should be higher than 0.3}
+  \end{itemize}
+
+\item{Data Collection}
+  \begin{itemize}
+  \item{The spacecraft payload should be able to fully deploy the
+    implemented instruments, such as high-resolution camera, laser
+    altimeter, ice-penetrating radar, spectrometers, and thermal
+    camera}
+  \item{Data should be collected and stored securely in the spacecraft
+    until the transmission to the ground station}
+  \end{itemize}
+
+\item{Communication}
+  \begin{itemize}
+  \item{Transmission rate should be high enough so that stored data
+    can be transmitted properly without being overloaded and/or lost:
+    the antenna should have gain that is high enough, and diameter
+    that is large enough}
+  \end{itemize}
+
+\item{Attitude control and stability}
+  \begin{itemize}
+  \item{The spacecraft should be able to rotate in all 3-axes to
+    control its attitude and point to desired direction}
+  \end{itemize}
+
+\item{Thermal control}
+  \begin{itemize}
+  \item{The spacecraft needs to have required absorptivity and
+    emissivity level to achieve a heat balance at 150-200K}
+  \end{itemize}
+
+\end{itemize}
+
+Ten driving requirements:
+\begin{enumerate}
+\item{The spacecraft should be able to generate enough thrust in order
+  to get on the flight path to Jupiter after being separated from the
+  launcher:} This is one of the factors that determine the amount of
+  fuel and type of main engine/thruster for the spacecraft.
+\item{The propulsion should be provided in such a way that the
+  direction of the flight path can be controlled:} This
+  (maneuverability)has to be taken into account when considering the
+  location of the thruster(s).
+\item{The spacecraft should have sufficient propulsion in order to
+  provide the desired delta-V necessary to achieve interplanetary
+  transfer (Earth -- Jupiter \& Jupiter -- Europa):} This should be
+  considered when determining the propellant mass.
+\item{At least 50W of power should be provided for the payload
+  (spacecraft instruments), which will be delivered by the solar
+  arrays during exposure to sunlight and batteries during eclipse:}
+  This should be considered when determining the size and type of the
+  solar array as well as the batteries.
+\item{The spacecraft structure should be able to endure the pressure
+  difference that is expected to occur during the mission:} This will
+  determine the load-bearing structure of the spacecraft.
+\item{Reliability should be higher than 0.9:} The reliability of
+  subsystems should be considered and selected accordingly.
+\item{The spacecraft payload should be able to fully deploy the
+  included instruments, such as the high-resolution camera, laser
+  altimeter, ice-penetrating radar, spectrometers, and the thermal
+  camera:} This will determine the design of the payload and its
+  relative location within the spacecraft.
+\item{The transmission rate should be high enough so that stored data
+  can be transmitted properly without being overloaded and/or lost:
+  the antenna should have gain that is high enough, and diameter that
+  is large enough:} This should be considered when determining the
+  size and type of the antenna.
+\item{The spacecraft should be able to rotate in all 3-axes to control
+  its attitude and point to the desired direction:} This has to be
+  taken into account when considering the location of the thruster(s).
+\item{The spacecraft needs to have a heat balance of 150-200K and
+  therefore requires the correct level of absorptivity and
+  emissivity:} This should be considered when selecting the outer skin
+  of the spacecraft.
+
+  Sources used \cite{projectreader,fortescue2011spacecraft}.
+
+\end{enumerate}
