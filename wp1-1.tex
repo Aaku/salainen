@@ -37,24 +37,28 @@
 
 \deliverable{1.1.1}
 
-\begin{table}[h]
-  \caption{Similar missions.}
-  \begin{tabular}{p{.5\textwidth}p{.5\textwidth}}
-    & \\
-    & Launch date \\
-    \hline
-    Galileo & October 1989 \\
-    Juno & August 2011 \\
-    Jupiter Europa Orbiter (JEO) & February 2020 \\
-    Jupiter Icy Moon Explorer (JUICE) & 2022 \\
-    Cassini & October 1997 \\
-  \end{tabular}
-\end{table}
+\begin{longtable}{ll}
+  \caption{Similar missions.} \\
 
-\begin{supertabular}{p{\textwidth}}
-  The mission objectives and associated requirements \\ \hline \\
+  Mission & Launch date \\
 
-  Galileo \\
+  Galileo & October 1989 \\
+
+  Juno & August 2011 \\
+
+  Jupiter Europa Orbiter (JEO) & February 2020 \\
+
+  Jupiter Icy Moon Explorer (JUICE) & 2022 \\
+
+  Cassini & October 1997 \\
+\end{longtable}
+
+\begin{longtable}{p{\textwidth}}
+  \caption{Similar missions' objectives and associated requirements}
+  \\
+
+  Galileo \\* \midrule
+
   \begin{itemize}
   \item Study Jupiter’s atmosphere, satellites, and magnetosphere by
     deploying a Jupiter orbiter and conducting various experiments.
@@ -63,12 +67,14 @@
   \item Venus and Earth flyby for extensive survey on the planets’
     surface and atmosphere (including imaging)
   \end{itemize}
+
   Requirements. Durable spacecraft and orbiter. Safe transmission of
   the data to Earth.  Strongly built probe which can survive
   penetration of the atmosphere as well as ground impact and operate
-  without malfunctions. \\
+  without malfunctions.
 
-  Juno \\
+  Juno \\* \midrule
+
   \begin{itemize}
   \item Observe Jupiter's gravity and magnetic fields, atmospheric
     dynamics and composition. Thus, ultimately, investigate the
@@ -78,7 +84,8 @@
   Requirements. Durable spacecraft with maneuverability. Safe
   transmission of the data to Earth. \\
 
-  JEO \\
+  JEO \\* \midrule
+
   \begin{itemize}
   \item Europa’s Ocean: Characterize the extent of the ocean and its
     relation to the deeper interior
@@ -95,7 +102,8 @@
     Jupiter system
   \end{itemize} \\
 
-  JUICE \\
+  JUICE \\* \midrule
+
   \begin{itemize}
   \item To characterize the conditions that may have led to the
     emergence of habitable environments among the Jovian icy
@@ -108,16 +116,22 @@
   accuracy for high-resolution imaging. Different orbits possible. A
   minimum average downlink of 1.4Gb/day \\
 
-  Cassini \\
+  Cassini \\* \midrule
+
   \begin{itemize}
   \item Bring the Huygens probe to Saturn’s moon Titan.
   \item Study the moons Titan and Encladus as well as the other icy
     moons
-  \end{itemize} \\
+  \end{itemize} \\ \bottomrule
+\end{longtable}
 
-  Main mission elements and their main functions \\ \hline \\
+\begin{longtable}{p{\textwidth}}
+  \caption{Similar missions' main elements and their main functions}
+  \\ \toprule
 
-  Galileo \\ \begin{itemize}
+  Galileo \\* \midrule
+
+  \begin{itemize}
   \item Launch (aboard a Space Shuttle). Achieve escape velocity from
     Earth and to head for Jupiter
   \item Release from the Space Shuttle and the provision of the
@@ -133,7 +147,9 @@
     atmosphere.
   \end{itemize} \\
 
-  Juno \\ \begin{itemize}
+  Juno \\* \midrule
+
+  \begin{itemize}
   \item Launch (aboard a Space Shuttle). Achieve Earth escape velocity
     and head for Jupiter.
   \item Release from the Space Shuttle and the provision of thrust.
@@ -141,9 +157,11 @@
   \item Flight to Jupiter and arrival into Jovian orbit.
   \end{itemize} \\
 
-  JEO \\ \begin{itemize}
+  JEO \\* \midrule
+
+  \begin{itemize}
   \item Launch (aboard a Space Shuttle Atlas V 551). Achieve Earth
-    escape velocity and head for Jupiter.
+   escape velocity and head for Jupiter.
   \item Release from the Space Shuttle and the provision of thrust.
   \item Venus and Earth flyby for gravity assist.
   \item Flight to Jupiter, and Jovian orbit insertion.  insertion
@@ -153,7 +171,9 @@
     running out of fuel.
   \end{itemize} \\
 
-  JUICE \\ \begin{itemize}
+  JUICE \\* \midrule
+
+  \begin{itemize}
   \item Launch by Ariana-5 ECA
   \item Cruise. Interplanetary transfer from Earth to Jupiter.
   \item Jupiter tour. A transfer to Callisto, 2 Europa and 3 Callisto
@@ -164,7 +184,9 @@
   \item End of mission.
   \end{itemize} \\
 
-  Cassini \\ \begin{itemize}
+  Cassini \\* \midrule
+
+  \begin{itemize}
   \item Launch.
   \item Jupiter flyby to provide the final push for the trajectory to
     Saturn and to study Jupiter from two different spacecraft at the
@@ -172,11 +194,15 @@
   \item Release of the Huygens probe to Titan.
   \item Start extended mission in which different moons of Saturn are
     studied.
-  \end{itemize} \\
+  \end{itemize} \\ \bottomrule
+\end{longtable}
 
-  Main performance and design characteristics \\ \hline \\
+\begin{longtable}{p{\textwidth}}
+  \caption{Similar missions' main performance and design
+    characteristics} \\ \toprule
 
-  Galileo \\
+  Galileo \\* \midrule
+
   \begin{itemize}
   \item Launch Vehicle. Space Shuttle Atlantis (STS-34R)
   \item The spacecraft's propulsion module consists of twelve
@@ -200,7 +226,8 @@
   \item Antenna Diameter. 4.8-meter.
   \end{itemize} \\
 
-  Juno \\
+  Juno \\* \midrule
+
   \begin{itemize}
   \item Launch Vehicle. Atlas V551
   \item Fuel Mass. 1,280 kilograms of fuel and 752 kilograms of
@@ -222,7 +249,8 @@
     consisting of 11 solar panels and one MAG boom.
   \end{itemize} \\
 
-  JEO \\
+  JEO \\* \midrule
+
   \begin{itemize}
   \item Launch Vehicle. Atlas V551.
   \item Radiation shielding to protect electronic components and
@@ -243,7 +271,8 @@
     (PPI).
   \end{itemize} \\
 
-  JUICE \\
+  JUICE \\* \midrule
+
   \begin{itemize}
   \item 3-axis stabilized.
   \item Power. Solar panels. 636-693W (EOM).
@@ -254,7 +283,8 @@
   \item Dry mass at launch. ~1800kg.
   \end{itemize} \\
 
-  Cassini \\
+  Cassini \\* \midrule
+
   \begin{itemize}
   \item 3-axis stabilized.
   \item 2,150 kg orbiter.
@@ -263,24 +293,21 @@
   \item 3 radioisotope thermoelectric generators for 880W. 670W left
     in 2010.
   \end{itemize} \\
-\end{supertabular}
+\end{longtable}
 
-\begin{table}[h]
-  \caption{Sources.}
-  \begin{tabular}{p{.2\textwidth}p{.8\textwidth}}
-    Sources & \\ \hline & \\
+\begin{longtable}{ll}
+  \caption{Sources.} \\ \toprule
 
-    Galileo & \cite{galileonasa} and \cite{galileojpl} \\
+  Galileo & \cite{galileonasa,galileojpl} \\
 
-    Juno & \cite{junonasa} \\
+  Juno & \cite{junonasa} \\
 
-    JEO & \cite{jeonasa} \\
+  JEO & \cite{jeonasa} \\
 
-    JUICE & \cite{juiceesa} \\
+  JUICE & \cite{juiceesa} \\
 
-    Cassini & \cite{cassininasa} \\
-  \end{tabular}
-\end{table}
+  Cassini & \cite{cassininasa} \\ \bottomrule
+\end{longtable}
 
 %% D1.1.2. Block diagram showing the outcomes of Task B above (hint:
 %% you can put the item to be designed in the middle, and the relevant
@@ -319,11 +346,11 @@ The design will have to interact with the following mission elements.
 The following mission objectives must be met
 
 \begin{enumerate}
-\item{Payload size.} 0.7m x 0.7m x 0.7m
+\item{Payload size.} \SI{0.7}{m} x \SI{0.7}{m} x \SI{0.7}{m}
 \item{Payload orientation.} Free View for Camera, etc.
-\item{$\Delta$-V budget.} To be determined.
-\item{Power requirements.} Maximum payload power: 50W
-\item{Payload operational temperature.} 150--200K
+\item{$\Delta V$ budget.} To be determined.
+\item{Power requirements.} Maximum payload power: \SI{50}{W}
+\item{Payload operational temperature.} \SI{150}{K}--\SI{200}{K}
 \item{Lifetime.} More than 3 years.
 \item{Data storage and transfer.} To be determined.
 \item{Reliability.} At least 0.9.
@@ -333,15 +360,15 @@ The following mission objectives must be met
 The already known design parameters are
 
 \begin{enumerate}
-\item{Payload mass.} 80kg
-\item{Payload dimensions.} 0.7m x 0.7m x 0.7m
-\item{Payload required power.} 50W
-\item{Payload operational temperature range.} 150--200K
-\item{Orbit.} Polar, 200km above Europa surface.
+\item{Payload mass.} \SI{80}{kg}
+\item{Payload dimensions.} \SI{0.7}{m} x \SI{0.7}{m} x \SI{0.7}{m}
+\item{Payload required power.} \SI{50}{W}
+\item{Payload operational temperature range.} \SI{150}{K}--\SI{200}{K}
+\item{Orbit.} Polar, \SI{200}{km} above Europa surface.
 \item{Mission duration.} At least 3 years in Europa orbit.
-\item{Launch date.} Around 2020
+\item{Launch date.} Around 2020.
 \item{Total mission cost.} Less than 500 million FY2000 USD.
-\item{Mission reliability.} 0.9
+\item{Mission reliability.} 0.9.
 \end{enumerate}
 
 The design parameters yet to be determined include
@@ -349,7 +376,7 @@ The design parameters yet to be determined include
 \begin{enumerate}
 \item{Radiation environment and shielding.} Radiation levels demand adequate
   shielding.
-\item{$\Delta V$-budget.}
+\item{$\Delta V$ budget.}
 \item{Payload orientation.} Free field of view for instruments.
 \item{Data storage and transfer.}
 \end{enumerate}

@@ -41,27 +41,27 @@ the mission.  Data is from
 \cite{nasaeuropa,Jupiter,Europa,Europa2,Europa3}.
 
 \begin{itemize}
-\item{Orbit Size Around Jupiter (semi-major axis):} 671,100 km
-\item{Periapsis (closest):} 664,792 km
-\item{Apoapsis (farthest):} 677,408 km
+\item{Orbit Size Around Jupiter (semi-major axis):} \SI{671,100}{km}
+\item{Periapsis (closest):} \SI{664,792}{km}
+\item{Apoapsis (farthest):} \SI{677,408}{km}
 \item{Sidereal Orbit Period (Length of Year):} 3.551181041 Earth days
-\item{Orbit Circumference:} 4,216,552.51 km
-\item{Average Orbit Velocity:} 49,476.1 km/h
+\item{Orbit Circumference:} \SI{4216552.51}{km}
+\item{Average Orbit Velocity:} \SI{49476.1}{km/h}
 \item{Orbit Eccentricity:} 0.0094
-\item{Orbit Inclination:} 0.466 degree
-\item{Mean Radius:} 1,560.8 km
-\item{Equatorial Circumference:} 9806.8 km
-\item{Volume:} 15,926,867,918 \si{km^3}
-\item{Mass:} 47,998,438,387,492,700,000,000 kg
-\item{Planet density:} 3.013 \si{g/cm^3}
-\item{Surface Area:} 30,612,893.23 \si{km^2}
-\item{Surface Gravity:} 1.315 \si{m/s^2}
-\item{Escape Velocity:} 7,293 km/h. Scientific Notation: 2026 m/s
+\item{Orbit Inclination:} \ang{0.466}
+\item{Mean Radius:} \SI{1560.8}{km}
+\item{Equatorial Circumference:} \SI{9806.8}{km}
+\item{Volume:} \SI{15926867918}{km^3}
+\item{Mass:} \SI{47998438387492700000000}{kg}
+\item{Planet density:} \SI{3.013}{g/cm^3}
+\item{Surface Area:} \SI{30612893.23}{km^2}
+\item{Surface Gravity:} \SI{1.315}{m/s^2}
+\item{Escape Velocity:} \SI{7293}{km/h}. Scientific Notation: \SI{2026}{m/s}
 \item{Sidereal Rotation Period (Length of Day):} 3.551 Earth days
 \item{Atmospheric Constituents:} Oxygen
-\item{Temperature:} 102K
+\item{Temperature:} \SI{102}{K}
 \item{Albedo:} 0.67
-\item{Solar intensity:} 49.8 \si{W/m^2}
+\item{Solar intensity:} \SI{49.8}{W/m^2}
 \end{itemize}
 
 %% D1.2.2. Comparative table including all the relevant design data
@@ -73,102 +73,126 @@ the mission.  Data is from
 Comparative table including all relevant data of reference
 spacecrafts.
 
+\begin{longtable}{lp{.8\textwidth}}
+  \caption{Reference spacecraft data.} \\ \toprule
 
-\tabletail{\hline}
-\begin{supertabular}{|p{.15\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|p{.17\textwidth}|}
-  \hline
-  & Galileo
-  & Juno
-  & JEO
-  & JUICE
-  & Cassini \\
+  \multicolumn{2}{c}{Launch vehicle} \\ \midrule
 
-  \hline Launch Vehicle
-  & Space Shuttle Atlantis (STS-34R)
-  & Atlas V551 (Atlas first stage with five solid rocket boosters, Centaur
-  upper stage)
-  &
-  &
-  & Titan IV-B/Centaur launch vehicle \\
+  Galileo & Space Shuttle Atlantis (STS-34R) \\
 
-  \hline Spacecraft mass
-  & Orbiter: 2,223 kg Probe: 339 kg
+  Juno & Atlas V551 (Atlas first stage with five solid rocket
+  boosters, Centaur upper stage) \\
 
-  & 3,625 kilograms total at launch, consisting of 1,593 kilograms of
-  spacecraft, 1,280 kilograms of fuel and 752 kilograms of oxidizer
+  JEO & \\
 
-  & Launch Mass Capability, 5040 kg Launch Vehicle Adapter, 123 kg
-  Flight System Mass, 1367 kg Propellant (for 2260 m/s), 2646 kg
-  Remaining usable launch mass, 973 kg (for contingency and system
-  margin)
+  JUICE & \\
 
-  & Dry mass at launch: ~1800 kg Chemical propellant: 3000kg Payload
-  mass: 104kg
+  Cassini & Titan IV-B/Centaur launch vehicle \\
 
-  & Spacecraft Ñ 2,442 kg Propellant Ñ 3,132 kg Total Mass Ñ 5,574 kg
-  Orbiter Weight: 5,712 kilograms with fuel, Huygens probe, adapter,
-  etc 2,125 kilograms unfueled orbiter alone \\
+  \multicolumn{2}{c}{Mass} \\ \midrule
 
-  \hline Spacecraft dimension
-  & Orbiter: 6.15 meters Probe: 86 cm
-  & 3.5 meters high, 3.5 meters in diameter
-  &
-  &
-  & Orbiter dimension: 6.7 meters high; 4 meters wide \\
+  Galileo & Orbiter: \SI{2223}{kg} Probe: \SI{339}{kg} \\
 
-  \hline Power
-  & Two Radioisotope Thermoelectric Generators Max power: 570W
+  Juno & \SI{3625}{kg} total at launch, consisting of \SI{1593}{kg} of
+  spacecraft, \SI{1280}{kg} of fuel and \SI{752}{kg} of oxidizer \\
 
-  & Solar Arrays: length of each solar array 9 meters by 2.65 meters
-  Total surface area of solar arrays: more than 60-meters squared
+  JEO & Launch Mass Capability, \SI{5040}{kg} Launch Vehicle Adapter,
+  \SI{123}{kg} Flight System, \SI{1367}{kg} Propellant (for
+  \SI{2260}{m/s}), \SI{2646}{kg} Remaining usable launch mass,
+  \SI{973}{kg} (for contingency and system margin) \\
 
-  & 540W RPS (MMRTG or ASRG) Lithium Ion battery for peak power
-  management
+  JUICE & Dry mass at launch: ~\SI{1800}{kg}. Chemical propellant:
+  \SI{3000}{kg}. Payload mass: \SI{104}{kg} \\
 
-  & Power: solar panels:636-693W(EOM) Solar array 60 Ð 75 m2
+  Cassini & Spacecraft \SI{2442}{kg}. Propellant \SI{3132}{kg}. Total
+  Mass \SI{5574}{kg}. Orbiter Weight: \SI{5712}{kg} with fuel, Huygens
+  probe, adapter, etc. \SI{2125}{kg} unfueled orbiter alone \\
 
-  & 885 watts (633 watts at end of mission) from radioisotope
+  \multicolumn{2}{c}{Dimensions} \\ \midrule
+
+  Galileo & Orbiter: 6.15 meters Probe: 86 cm \\
+
+  Juno & 3.5 meters high, 3.5 meters in diameter \\
+
+  JEO & \\
+
+  JUICE & \\
+
+  Cassini & Orbiter dimension: 6.7 meters high; 4 meters wide \\
+
+  \multicolumn{2}{c}{Power} \\ \midrule
+
+  Galileo & Two Radioisotope Thermoelectric Generators Max power:
+  \SI{570}{W} \\
+
+  Juno & Solar Arrays: length of each solar array \SI{9}{m} by
+  \SI{2.65}{m} Total surface area of solar arrays: more than
+  \SI{60}{m^2} \\
+
+  JEO & \SI{540}{W} RPS (MMRTG or ASRG) Lithium Ion battery for peak
+  power management \\
+
+  Juice & Power: solar panels:\SIrange{636}{693}{W} (EOM). Solar array
+  \SIrange{60}{75}{m^2} \\
+
+  Cassini & 885 watts (633 watts at end of mission) from radioisotope
   thermoelectric generators \\
 
-  \hline Propulsion
+  \multicolumn{2}{c}{Propulsion} \\ \midrule
 
-  & The spacecraft's propulsion module consists of twelve 10-newton
-  (2.25-pound-force) thrusters and a single 400-newton
+  Galileo & The spacecraft's propulsion module consists of twelve
+  10-newton (2.25-pound-force) thrusters and a single 400-newton
   (90-pound-force) engine which use monomethylhydrazine fuel and
-  nitrogen-tetroxide oxidizer
+  nitrogen-tetroxide oxidizer \\
 
-  & Dual mode propulsion subsystem; a bi-propellant main engine and
+  Juno & Dual mode propulsion subsystem; a bi-propellant main engine and
   mono-propellant reaction control system thrusters. The 12 reaction
   control system thrusters allow translation and rotation about three
-  axes & Bi-propellant , 900N gimbaled engine
+  axes \\
 
-  & High delta-V capability (2700 m/s)
-  & Two engines, 445 Newton thrust each \\
+  JEO & Bi-propellant , \SI{900}{N} gimbaled engine \\
 
-  \hline Antenna diameter
+  JUICE & High delta-V capability (2700 m/s) \\
 
-  & 4.8-meter
-  & 4 meter
-  &
-  & 3m
-  & 4m \\
+  Cassini & Two engines, 445 Newton thrust each \\
 
-  \hline Total cost
-  & \$1.3 billion
-  & \$1.1 billion
-  &
-  &
-  & \$3.27 billion \\
+  \multicolumn{2}{c}{Antenna diameter} \\ \midrule
 
-  \hline Additional characteristics
-  &
-  &
-  & 3m HGA with 2-axis gimbal, 25 W X-band and Ka-band TWTAs & X-
-  and Ka bands, Downlink ³ 1.4 Gbit/day
-  & \\
+  Galileo & 4.8-meter \\
 
-  \hline
-\end{supertabular}
+  Juno & 4 meter \\
+
+  JEO & \\
+
+  JIME & 3m \\
+
+  Cassini & 4m \\
+
+  \multicolumn{2}{c}{Total cost} \\ \midrule
+
+  Galileo & \$1.3 billion \\
+
+  Juno & \$1.1 billion \\
+
+  JEO & \\
+
+  JIME & \\
+
+  Cassini & \$3.27 billion \\
+
+  \multicolumn{2}{c}{Additional characteristics} \\ \midrule
+
+  Galileo & \\
+
+  Juno & \\
+
+  JEO & \SI{3}{m} HGA with 2-axis gimbal, \SI{25}{W} X-band and
+  Ka-band TWTAs \\
+
+  JIME & X and Ka bands, Downlink 1.4 Gbit/day \\
+
+  Cassini & \\ \bottomrule
+\end{longtable}
 
 Sources used
 \cite{Galileo,Galileo2,Juno,JEO,Juice,Juice2,Cassini,Cassini2}.
@@ -189,7 +213,7 @@ Design Requirements
   \item{The propulsion should be provided in such a way that direction
     of the flight path can be controlled}
   \item{The spacecraft should be able to provide propulsion which can
-    create the desired delta-V in order to achieve interplanetary
+    create the desired $\Delta V$ in order to achieve interplanetary
     transfer (Earth -- Jupiter \& Jupiter -- Europa)}
   \item{The propulsion should be provided in case of undesired
     de-orbiting}
@@ -240,14 +264,15 @@ Design Requirements
 
 \item{Attitude control and stability}
   \begin{itemize}
-  \item{The spacecraft should be able to rotate in all 3-axes to
+  \item{The spacecraft should be able to rotate around all 3-axes to
     control its attitude and point to desired direction}
   \end{itemize}
 
 \item{Thermal control}
   \begin{itemize}
   \item{The spacecraft needs to have required absorptivity and
-    emissivity level to achieve a heat balance at 150-200K}
+    emissivity level to achieve a heat balance at
+    \SI{150}{K}--\SI{200}{K}}
   \end{itemize}
 
 \end{itemize}
@@ -266,7 +291,7 @@ Ten driving requirements:
   provide the desired delta-V necessary to achieve interplanetary
   transfer (Earth -- Jupiter \& Jupiter -- Europa):} This should be
   considered when determining the propellant mass.
-\item{At least 50W of power should be provided for the payload
+\item{At least \SI{50}{W} of power should be provided for the payload
   (spacecraft instruments), which will be delivered by the solar
   arrays during exposure to sunlight and batteries during eclipse:}
   This should be considered when determining the size and type of the
@@ -289,10 +314,10 @@ Ten driving requirements:
 \item{The spacecraft should be able to rotate in all 3-axes to control
   its attitude and point to the desired direction:} This has to be
   taken into account when considering the location of the thruster(s).
-\item{The spacecraft needs to have a heat balance of 150-200K and
-  therefore requires the correct level of absorptivity and
-  emissivity:} This should be considered when selecting the outer skin
-  of the spacecraft.
+\item{The spacecraft needs to have a heat balance of
+  \SI{150}{K}--\SI{200}{K} and therefore requires the correct level of
+  absorptivity and emissivity:} This should be considered when
+  selecting the outer skin of the spacecraft.
 
   Sources used \cite{projectreader,fortescue2011spacecraft}.
 
