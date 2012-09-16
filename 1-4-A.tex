@@ -2,51 +2,69 @@ Data was obtained from tables from
 \cite[p. 589,590]{brown2002elements} for planetary spacecraft and
 previous tasks.
 
-The total on-orbit dry mass is
+The total on-orbit dry mass, as given on page \pageref{sec:drymass} of
+this document, is
 
-\[ m = 1100\mathrm{kg} \]
+\[ M_1 = \SI{1100}{kg} \]
 
-The minimum mass contingency for this class of spacecraft and stage of
-design 30\%. This works out to a total on-orbit dry mass of 950kg.
+The minimum mass contingency margin for this class of spacecraft and
+stage of design is \SI{30}{\%}. If this is subtracted from the dry
+mass a total mass of $M_1 / 1.3 \approx \SI{850}{kg}$ remains. Since
+$M_1$ is derived from the final masses of real operational satellites,
+margins should be subtracted rather than added.
 
-Subsystem on-orbit drymass as percentages of total and absolute with
-contingency margin removed are the following
+Subsystem on-orbit drymasses, as percentages of total, absolute
+masses, and absolute masses with contingency margin removed, are the
+following
 
-\begin{center}
-\begin{tabular}{rl}
-Structure & $26\% \approx 290\mathrm{kg} - 86\mathrm{kg}$ \\
-Thermal & $3\% \approx 33\mathrm{kg} - 9.9\mathrm{kg}$ \\
-ACS & $9\% \approx 99\mathrm{kg} - 30\mathrm{kg}$ \\
-Power & $19\% \approx 210\mathrm{kg} - 63\mathrm{kg}$ \\
-Cabling & $7\% \approx 77\mathrm{kg} - 23\mathrm{kg}$ \\
-Propulsion & $13\% \approx 140\mathrm{kg} - 43\mathrm{kg}$ \\
-Telecom & $6\% \approx 66\mathrm{kg} - 20\mathrm{kg}$ \\
-CDS & $6\% \approx 66\mathrm{kg} - 20\mathrm{kg}$ \\
-Payload & $11\% \approx 120\mathrm{kg} - 36\mathrm{kg}$ \\
-\end{tabular}
-\end{center}
+\begin{table}[H]
+  \label{tbl:massbudget}
+  \caption{Subsystem mass budgets.}
+  \begin{center}
+    \begin{tabular}{rlll}
+      Subsystem & \si{\%} & \si{kg} & \si{kg} \\
+      Structure & 26 & 290 & 220 \\
+      Thermal & 3 & 33 & 25 \\
+      ACS & 9 & 99 & 76 \\
+      Power & 19 & 210 & 160 \\
+      Cabling & 7 & 77 & 59 \\
+      Propulsion & 13 & 140 & 110 \\
+      Telecom & 6 & 66 & 51 \\
+      CDS & 6 & 66 & 51 \\
+      Payload & 11 & 120 & 93
+    \end{tabular}
+  \end{center}
+\end{table}
 
-Total power usage is $P \approx 485{W}$.
+Total power usage is $P = \SI{485}{W}$ as given on page \pageref{sec:power}.
 
-The minimum power contingency is 90\%. Subsystem power allocation
-estimates as percentages of subsystem total ($P_\mathrm{subsystems} =
-P - P_\mathrm{payload} \approx 435\mathrm{W}$) and absolute with
-contingency margin removed
+The minimum power contingency is \SI{90}{\%}. Subsystem power
+allocation estimates as percentages of subsystem total
+($P_\mathrm{subsystems} = P - P_\mathrm{payload} \approx
+\SI{435}{W}$), absolute, and absolute with contingency margin removed
+are
 
-\begin{center}
-\begin{tabular}{rl}
-Thermal control & $28\% \approx 120\mathrm{W} - 110\mathrm{W}$ \\
-Attitude control & $20\% \approx 87\mathrm{W} - 78\mathrm{W}$ \\
-Power & $10\% \approx 44\mathrm{W} - 39\mathrm{W}$ \\
-CDS & $17\% \approx 74\mathrm{W} - 67\mathrm{W}$ \\
-Communications & $23\% \approx 100\mathrm{W} - 90\mathrm{W}$ \\
-Propulsion & $1\% \approx 4.4\mathrm{W} - 3.9\mathrm{W}$ \\
-Mechanisms & $1\% \approx 4.4\mathrm{W} - 3.9\mathrm{W}$ \\
-\end{tabular}
-\end{center}
+\begin{table}[H]
+  \label{tbl:powerbudget}
+  \caption{Subsystem power budgets.}
+  \begin{center}
+    \begin{tabular}{rlll}
+      Subsystem & \si{\%} & \si{W} & \si{W} \\
+      Thermal control & 28 & 120 & 64 \\
+      Attitude control & 20 & 87 & 46 \\
+      Power & 10 & 44 & 23 \\
+      CDS & 17 & 74 & 39 \\
+      Communications & 23 & 100 & 53 \\
+      Propulsion & 1 & 4.4 & 2.3 \\
+      Mechanisms & 1 & 4.4 & 2.3
+    \end{tabular}
+  \end{center}
+\end{table}
 
 The launch vehicle adapter mass is given by
 
 \begin{equation}
-  M_{\mathrm{adapter}} = 0.0755 M_{\mathrm{launch}} + 50
+  M_{\mathrm{adapter}} = 0.0755 M_{1} + 50 \approx \SI{280}{kg}
 \end{equation}
+
+$M_1$ was computed in the section on page \pageref{sec:initialmass}.
